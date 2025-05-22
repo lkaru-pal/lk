@@ -1,0 +1,172 @@
+ay = 0
+bee = 0
+cee = 0
+dee = 0
+eee = 0
+
+print("Which type of berry are you? Take this quiz to find out!")
+
+answer1 = input("What is your favourite colour? a) green, b) blue, c) yellow, d) pink, or e) red?")
+
+if answer1.lower() == "a": 
+    ay += 1
+elif answer1.lower() == "b":
+    bee += 1
+elif answer1.lower() == "c":
+    cee += 1
+elif answer1.lower() == "d":
+    dee += 1
+elif answer1.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer2 = input("How would your friends describe you? a) mysterious, b) funny, c) insane, d)kind, or e)annoying?")
+
+if answer2.lower() == "a": 
+    ay += 1
+elif answer2.lower() == "b":
+    bee += 1
+elif answer2.lower() == "c":
+    cee += 1
+elif answer2.lower() == "d":
+    dee += 1
+elif answer2.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer3 = input("What is most important to you in life? a) family, b) friends, c) happiness, d) money, or e) love?")
+
+if answer3.lower() == "a": 
+    ay += 1
+elif answer3.lower() == "b":
+    bee += 1
+elif answer3.lower() == "c":
+    cee += 1
+elif answer3.lower() == "d":
+    dee += 1
+elif answer3.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer4 = input("What is your favourite genre of music to listen to? a) Pop, b) Folk/indie, c) Rock, d) EDM, or e) Rap?")
+
+if answer4.lower() == "a": 
+    ay += 1
+elif answer4.lower() == "b":
+    bee += 1
+elif answer4.lower() == "c":
+    cee += 1
+elif answer4.lower() == "d":
+    dee += 1
+elif answer4.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer5 = input("What type of food do you like to eat? a) Sweet, b) Salty, c) Spicy, d) Sweet AND salty (combination), or e) Sour?")
+
+if answer5.lower() == "a": 
+    ay += 1
+elif answer5.lower() == "b":
+    bee += 1
+elif answer5.lower() == "c":
+    cee += 1
+elif answer5.lower() == "d":
+    dee += 1
+elif answer5.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer6 = input("What is your favourite subject? a) Maths, b) English, c) Science, d) Music, or e) History?")
+
+if answer6.lower() == "a": 
+    ay += 1
+elif answer6.lower() == "b":
+    bee += 1
+elif answer6.lower() == "c":
+    cee += 1
+elif answer6.lower() == "d":
+    dee += 1
+elif answer6.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer7 = input("What is your favourite type of weather? a) Rain, b) Snow, c) Sunny, d) Cloudy, or e) Windy?")
+
+if answer7.lower() == "a": 
+    ay += 1
+elif answer7.lower() == "b":
+    bee += 1
+elif answer7.lower() == "c":
+    cee += 1
+elif answer7.lower() == "d":
+    dee += 1
+elif answer7.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer8 = input("Choose an element! a) Water, b) Fire, c) Earth, d) Air, or e) Ice?")
+
+if answer8.lower() == "a": 
+    ay += 1
+elif answer8.lower() == "b":
+    bee += 1
+elif answer8.lower() == "c":
+    cee += 1
+elif answer8.lower() == "d":
+    dee += 1
+elif answer8.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer9 = input("What animal do you think you would be? a) Cat, b) Dog, c) Bird, d) Frog, or e) Sea creature?")
+
+if answer9.lower() == "a": 
+    ay += 1
+elif answer9.lower() == "b":
+    bee += 1
+elif answer9.lower() == "c":
+    cee += 1
+elif answer9.lower() == "d":
+    dee += 1
+elif answer9.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer10 = input("Which superpower would you want? a) Invisibility, b) Flying, c) Laser eyes, d) Healing, or e) Elemental powers?")
+
+if answer10.lower() == "a": 
+    ay += 1
+elif answer10.lower() == "b":
+    bee += 1
+elif answer10.lower() == "c":
+    cee += 1
+elif answer10.lower() == "d":
+    dee += 1
+elif answer10.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+answer11 = input("Lastly, which emotion do you feel the most? a) Joy, b) Anger, c) Sadness, d) Fear, or e) Stress?")
+
+if answer11.lower() == "a": 
+    ay += 1
+elif answer11.lower() == "b":
+    bee += 1
+elif answer11.lower() == "c":
+    cee += 1
+elif answer11.lower() == "d":
+    dee += 1
+elif answer11.lower() == "e":
+    eee += 1
+else: ("Sorry, I do not understand your response. Please try again.")
+
+if ay > bee and ay > cee and ay > dee and ay > eee:
+    print("You are a strawberry! You are incredibly perceptive, with an intelligence many can only dream of. You put your loved ones first, and are incredibly intuitive. You may seem a bit closed off to others, however, you're a softie at heart!")
+elif bee > ay and bee > cee and bee > dee and bee > eee:
+    print("You are a blueberry! You are fiercely protective of your friends and you have a strong sense of justice, always wanting to do what's right. You may seem timid and shy at first, however upon knowing you better, you are actually the opposite, energetic, funny and with a magnetic personality!")
+elif cee > ay and cee > bee and cee > dee and cee > eee:
+    print("You are a cucumber! (cucumbers are actually berries which feels crazy!) You are extroverted and spontaenous, people never know what to expect with you! You always know how to make people laugh, and your confidence inspires those around you to be the best versions of themselves! Keep being you!")
+elif dee > ay and dee > bee and dee > cee and dee > eee:
+    print("You are a cranberry! You are a kind, caring individual who always puts others needs in front of your own, even if you may not be on the best terms with them! You are level-headed and practical, always being the face of reason and acting rationally in times of stress, despite your own worries!")
+elif eee > ay and eee > bee and eee > cee and eee > dee:
+    print("You are a raspberry! You are a high strung individual, placing pressure on yourself to do well no matter what! Your competitiveness is your gift, pairing with your intelligence and inquisitive nature to create an incrediblly dedicated leader in any given situation!")
