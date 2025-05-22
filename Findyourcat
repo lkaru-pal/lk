@@ -1,0 +1,74 @@
+def main():
+    # You have a lost cat, search to find them
+    locations = {
+        "bedroom" : {
+            "description" : "You are in your bedroom. Your cat is gone. There is a door to the left of you and a hole in your heart that can only be filled with your cat's purr. Find your cat. Type left or right to choose where to go. Find your cat.",
+            "exits" : {"left":"hallway"}
+        },
+        "hallway":{ 
+            "description":"You are in the hallway. There are rooms to the left and right of you. There is a faint meow but it might be a hallucination. Find your cat. Type left or right to choose where to go. Find your cat",
+            "exits": {"right":"bedroom","left":"kitchen"}
+        },
+        "kitchen":{
+            "description":"You are in your kitchen. There are pots and pans, softly clinking with the sounds of depression. Where is your cat? There is also a door to the hallway. Find your cat.",
+            "exits":{"right":"hallway","left":"study"}
+        },
+        "study":{
+            "description":"You are in the study, the smell of mould lingering in the air. You're starting to have withdrawals from how much time you've spent without your beloved kitty. Type left or right to choose where to go from here.",
+            "exits":{"right":"kitchen","left":"basement"}
+        },
+        "basement": {
+            "description":"You find yourself now in the basement. The years have dwindled by in search of your cat. It has been months, years, possibly even decades. The door shuts behind you. There is no way out but forward. Type left or right to choose (pro tip the door is locked behind you. you have no choice sorry.",
+            "exits": {"left":"closet"}      
+        },
+        "closet":{
+            "description":"You are trapped. Locked in a dark and mouldy closet. In the wake of your loneliness, a choice whispered in echoed meows is given. The final choice, left or right. Which do you choose?",
+            "exits":{"left":"hell","right":"meow"}
+        },
+                "meow":{
+            "description":"The gates open, the years of misery dissipating like a snow storm in summer. You remember that fateful day in your bedroom, feeling a certain kind of emptiness that only your cat could fill. It was decades ago, yet you were free from it now, with your cat softly purring in your lap. You have found your cat, at last the sun may shine again. Well done my friend."
+        },
+                "hell":{
+            "description":"You remember that day, longing for your cat, hoping for their return. Yet now, you find yourself in an eternal hell, the cesspits of the universe where no mammal, amphibian or reptile shall ever roam. Apart from you. You tried your best to find your cat, but sometimes your best is not enough. Now you must burn in your bad choices for eternity. Perhaps you will reunite in another lifetime.c",
+        }
+        }
+
+    # Set beginning location
+    current_location = "bedroom"
+
+    # Game loop
+    while True:
+        # Display current location's description
+        print(locations[current_location]["description"]) 
+
+        # Get player input
+        command = input("> ")
+
+        # Process the command !!
+        if command == "right":
+            # ... (logic for going right)
+            if "right" in locations[current_location]["exits"]:
+                current_location = locations[current_location]["exits"]["right"]
+            else:
+                print("You are at a dead end. Find another direction to go and find your cat, they await patiently but for how long...?")
+        elif command == "left":
+            # ... (logic for going left)
+            if "left" in locations[current_location]["exits"]:
+                current_location = locations[current_location]["exits"]["left"]
+                print(current_location)
+            else:
+                print("You are at a dead end. Find another direction to go and find your cat, they await patiently but for how long...?")
+        elif command == "quit":
+            print("Goodbye. Come back and find your cat. Please.")
+            break # Exit the loop
+# ... (add more commands and logic LOL)
+main()
+    
+
+
+
+        
+
+
+
+        
